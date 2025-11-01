@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMTExtra - Professional SMT Tape Feeders | Assembled in Canada</title>
+    <meta name="description" content="High-precision static tape feeders for desktop SMT machines. Professional grade, assembled in Canada. 8mm, 12mm, 16mm sizes available.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Times New Roman', Times, Georgia, serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: #f8f9fa;
+        }
+        
+        /* Navigation */
+        nav {
+            background: #0066cc;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+        }
+        
+        nav .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        nav .logo {
+            color: #fff;
+            font-size: 1.6rem;
+            font-weight: bold;
+            text-decoration: none;
+            letter-spacing: 1px;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        nav a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 1.1rem;
+            letter-spacing: 0.5px;
+            transition: color 0.3s;
+            -webkit-text-stroke: 2px #000000;
+            text-stroke: 2px #000000;
+            paint-order: stroke fill;
+        }
+        
+        nav a:hover {
+            color: #5dade2;
+        }
+        
+        /* Hero Section - Top 30% */
+        .hero {
+            height: 30vh;
+            min-height: 300px;
+            background: linear-gradient(135deg, #0066cc 0%, #0088ff 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+            margin: 2rem;
+            border: 2px solid #1a1a1a;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                linear-gradient(45deg, transparent 48%, rgba(52, 152, 219, 0.1) 49%, rgba(52, 152, 219, 0.1) 51%, transparent 52%),
+                linear-gradient(-45deg, transparent 48%, rgba(52, 152, 219, 0.1) 49%, rgba(52, 152, 219, 0.1) 51%, transparent 52%);
+            background-size: 30px 30px;
+            opacity: 0.3;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 1200px;
+            padding: 2rem 2rem 3rem 2rem;
+        }
+        
+        .hero h1 {
+            font-size: 4.5rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        .hero-tagline {
+            font-size: 1.6rem;
+            font-weight: 400;
+            margin-bottom: 1.5rem;
+            letter-spacing: 1px;
+            font-style: italic;
+        }
+        
+        .focus-points {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+            margin-top: 0;
+        }
+        
+        .focus-point {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .focus-point-icon {
+            width: 60px;
+            height: 60px;
+            background: rgba(52, 152, 219, 0.2);
+            border: 3px solid #3498db;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .focus-point-text {
+            font-size: 1.3rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        /* Image Gallery Section - Bottom 50% */
+        .gallery-section {
+            min-height: 50vh;
+            background: #fff;
+            padding: 4rem 2rem;
+            margin: 2rem;
+            border: 2px solid #1a1a1a;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            color: #0066cc;
+            margin-bottom: 1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #7f8c8d;
+            margin-bottom: 3rem;
+            font-style: italic;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .gallery-item {
+            background: #ecf0f1;
+            border: 3px solid #bdc3c7;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            aspect-ratio: 4/3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            border-color: #0088ff;
+        }
+        
+        .gallery-placeholder {
+            text-align: center;
+            color: #7f8c8d;
+            padding: 2rem;
+        }
+        
+        .gallery-placeholder-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            opacity: 0.5;
+        }
+        
+        .gallery-placeholder-text {
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        
+        /* Contact Section - Bottom */
+        .contact-section {
+            background: #0066cc;
+            color: white;
+            padding: 3rem 2rem;
+        }
+        
+        .contact-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .contact-title {
+            font-size: 2.2rem;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .contact-item {
+            background: rgba(52, 152, 219, 0.1);
+            padding: 2rem;
+            border-radius: 8px;
+            border: 2px solid rgba(52, 152, 219, 0.3);
+        }
+        
+        .contact-item h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: #5dade2;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .contact-item p {
+            font-size: 1.15rem;
+            line-height: 1.8;
+        }
+        
+        .contact-item a {
+            color: #5dade2;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .contact-item a:hover {
+            color: #ffffff;
+        }
+        
+        /* Footer */
+        footer {
+            background: #003d7a;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        footer p {
+            margin: 0.5rem 0;
+            font-size: 1rem;
+        }
+        
+        .footer-highlight {
+            color: #5dade2;
+            font-weight: bold;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero {
+                margin: 1rem;
+            }
+            
+            .gallery-section {
+                margin: 1rem;
+                padding: 2rem 1rem;
+            }
+            
+            nav ul {
+                gap: 1rem;
+            }
+            
+            nav a {
+                font-size: 0.9rem;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-tagline {
+                font-size: 1.2rem;
+            }
+            
+            .focus-points {
+                gap: 1.5rem;
+            }
+            
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">SMTExtra</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="customization.html">Customization</a></li>
+                <li><a href="grouping.html">Grouping Options</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section - Top 30% -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>SMTExtra</h1>
+            <p class="hero-tagline">Professional Static Tape Feeders for Desktop SMT</p>
+            
+            <div class="focus-points">
+                <div class="focus-point">
+                    <div class="focus-point-icon">⚡</div>
+                    <div class="focus-point-text">Precision</div>
+                </div>
+                <div class="focus-point">
+                    <div class="focus-point-icon">⭐</div>
+                    <div class="focus-point-text">Quality</div>
+                </div>
+                <div class="focus-point">
+                    <div class="focus-point-icon">💰</div>
+                    <div class="focus-point-text">Affordability</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section - Bottom 50% -->
+    <section class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">Precision in Action</h2>
+            <p class="section-subtitle">Professional-grade feeders designed for desktop SMT machines and manual PCBA setups</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <div class="gallery-placeholder-icon">📷</div>
+                        <p class="gallery-placeholder-text">Feeders Installed on SMT Machine</p>
+                        <p style="font-size: 1rem; margin-top: 0.5rem; opacity: 0.7;">Replace with your product image</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <div class="gallery-placeholder-icon">📷</div>
+                        <p class="gallery-placeholder-text">PCBA Production Setup</p>
+                        <p style="font-size: 1rem; margin-top: 0.5rem; opacity: 0.7;">Replace with your product image</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <div class="gallery-placeholder-icon">📷</div>
+                        <p class="gallery-placeholder-text">Close-up Detail View</p>
+                        <p style="font-size: 1rem; margin-top: 0.5rem; opacity: 0.7;">Replace with your product image</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="background: #ecf0f1; padding: 2rem; border-radius: 8px; border-left: 5px solid #0066cc;">
+                <h3 style="color: #0066cc; margin-bottom: 1rem; font-size: 1.6rem;">Why SMTExtra?</h3>
+                <p style="color: #34495e; font-size: 1.15rem; line-height: 1.8;">
+                    Our static tape feeders are engineered for precision and reliability. Designed for desktop SMT machines and manual PCBA setups, each feeder features fiducial-based positioning, customizable height options, and grouping capabilities for flexible width combinations. <strong>Assembled in Canada</strong> to professional-grade standards, with in-stock availability for immediate shipping.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-content">
+            <h2 class="contact-title">Get in Touch</h2>
+            <p style="font-size: 1.3rem; margin-bottom: 2rem;">Ready to enhance your SMT setup? Contact us today.</p>
+            
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <h3>📧 Email</h3>
+                    <p><a href="mailto:info@smtextra.com">info@smtextra.com</a></p>
+                </div>
+                
+                <div class="contact-item">
+                    <h3>🏢 Location</h3>
+                    <p>Assembled in Canada<br>Serving North America</p>
+                </div>
+                
+                <div class="contact-item">
+                    <h3>⚡ Response Time</h3>
+                    <p>Within 24 hours<br>Business days</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 <span class="footer-highlight">SMTExtra</span> - Professional SMT Tape Feeders</p>
+        <p style="font-size: 0.95rem; opacity: 0.8; margin-top: 1rem;">Assembled in Canada | High Precision | Professional Grade</p>
+    </footer>
+</body>
+</html>
